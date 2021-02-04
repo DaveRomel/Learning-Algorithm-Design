@@ -33,8 +33,8 @@ public class Student {
         this.city = city;
         this.career = career;
         this.email = email;
-        this.user = StringUtils.capitalLetter(user)?StringUtils.rigthSize(user)?user:null:null;
-        this.pass = StringUtils.capitalLetter(pass)?StringUtils.rigthSize(pass)?user:null:null;
+        this.user = StringUtils.capitalLetter(user)?StringUtils.rigthSize(user)?StringUtils.withoutSpace(user)?StringUtils.isNotEmpty(user)?user:null:null:null:null;
+        this.pass = StringUtils.capitalLetter(pass)?StringUtils.rigthSize(pass)?StringUtils.withoutSpace(pass)?StringUtils.isNotEmpty(pass)?pass:null:null:null:null;
         this.rol = rol;
         this.score = score;
     }

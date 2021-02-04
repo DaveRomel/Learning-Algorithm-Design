@@ -12,6 +12,13 @@ public class StringUtils
         return false;
     }
 
+    public static boolean isNotEmpty(String str)
+    {
+        if (str == null || str.equals("") || str.matches("[ ]+"))
+            return false;
+        return true;
+    }
+
     public static boolean rigthSize(String str)
     {
         if(str.length()>=4)
@@ -26,6 +33,13 @@ public class StringUtils
         if (str.matches(".* .*"))
             return true;
         return false;
+    }
+
+    public static boolean withoutSpace(String str)
+    {
+        if (str.matches(".* .*"))
+            return false;
+        return true;
     }
 
     public static boolean capitalLetter(String str)
