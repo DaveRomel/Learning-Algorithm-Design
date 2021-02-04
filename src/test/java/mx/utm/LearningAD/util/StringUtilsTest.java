@@ -1,4 +1,4 @@
-package mx.utm.utils;
+package mx.utm.LearningAD.util;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
@@ -94,65 +94,65 @@ public class StringUtilsTest {
     }
 
 
-    //whitSpace(con espacios)
+    //withSpace(con espacios)
     @Test
-    public void whitSpace_1_character_space_String()
+    public void withSpace_1_character_space_String()
     {
-        assertEquals(StringUtils.whithSpace("h "),true);
+        assertEquals(StringUtils.withSpace("h "),true);
     }
 
     @Test
-    public void whitoutSpace_1_space_betwen_character_String()
+    public void withoutSpace_1_space_betwen_character_String()
     {
-        assertEquals(StringUtils.whithSpace("h o"),true);
+        assertEquals(StringUtils.withSpace("h o"),true);
     }
 
     @Test
-    public void whitSpace_2_character_1_space_String()
+    public void withSpace_2_character_1_space_String()
     {
-        assertEquals(StringUtils.whithSpace("ho "),true);
+        assertEquals(StringUtils.withSpace("ho "),true);
     }
 
     @Test
-    public void whitSpace_3_character_space_String()
+    public void withSpace_3_character_space_String()
     {
-        assertEquals(StringUtils.whithSpace("hol "),true);
+        assertEquals(StringUtils.withSpace("hol "),true);
     }
 
     @Test
-    public void whitoutSpace_2_character_1_space_String()
+    public void withoutSpace_2_character_1_space_String()
     {
-        assertEquals(StringUtils.whithSpace("ho l"),true);
+        assertEquals(StringUtils.withSpace("ho l"),true);
     }
 
     @Test
-    public void whitoutSpace_1_space_character_String()
+    public void withoutSpace_1_space_character_String()
     {
-        assertEquals(StringUtils.whithSpace(" h"),true);
+        assertEquals(StringUtils.withSpace(" h"),true);
     }
 
     @Test
-    public void whitSpace_4_character_space_String()
+    public void withSpace_4_character_space_String()
     {
-        assertEquals(StringUtils.whithSpace("hola "),true);
+        assertEquals(StringUtils.withSpace("hola "),true);
     }
 
     @Test
-    public void whitoutSpace_1_character_space_String()
+    public void withoutSpace_1_character_space_String()
     {
-        assertEquals(StringUtils.whithSpace("hol a"),true);
+        assertEquals(StringUtils.withSpace("hol a"),true);
     }
 
     @Test
-    public void whitSpace_String()
+    public void withSpace_String()
     {
-        assertEquals(StringUtils.whithSpace("hola hola"),true);
+        assertEquals(StringUtils.withSpace("hola hola"),true);
     }
 
     @Test
-    public void whitoutSpace_String()
+    public void withoutSpace_String()
     {
-        assertEquals(StringUtils.whithSpace("holahola"),false);
+        assertEquals(StringUtils.withSpace("holahola"),false);
     }
 
 
